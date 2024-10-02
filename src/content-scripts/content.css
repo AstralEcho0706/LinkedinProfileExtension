@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Outfit-Regular.ttf')
+    format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Outfit-Light.ttf')
+    format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Outfit-Medium.ttf')
+    format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Outfit-SemiBold.ttf')
+    format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Outfit-Bold.ttf')
+    format('truetype');
+  font-weight: 700;
+}
+
+body,
+p,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit';
+}
+
+#kompassai-icon-wrapper {
+  cursor: pointer;
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  bottom: 50px;
+  right: 50px;
+  font-family: 'Outfit';
+}
+
+#kompassai-icon-wrapper > img {
+  width: 64px;
+}
+
+.kpi-companion-grip {
+  opacity: 0;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: flex;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  transition-property: width, height;
+  width: 20px;
+  height: 20px;
+  padding: 3px 0px;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#kps_append_button {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.kpi-companion-grip span {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: flex;
+  height: 7px;
+  color: #000000;
+}
+
+.kpi-companion-e3kwv2 > svg,
+.kpi-companion-e3kwv2 > img {
+  display: block;
+  width: calc(3 * var(--lns-unit, 8px));
+  height: calc(3 * var(--lns-unit, 8px));
+}
+
+.kpi-companion-grip:hover span {
+  color: #000000;
+}
+
+.kps_sticky {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  cursor: grab;
+  pointer-events: none;
+}
+
+.kps_sticky:hover .kpi-companion-grip {
+  opacity: 1;
+}
+
+#kps_sticky.dragging {
+  opacity: 0.7;
+  cursor: grabbing;
+}
+
+.g-dialog-overlay {
+  z-index: 99999999 !important;
+  width: 375px;
+  left: auto !important;
+}
+
+.g-dialog-frame {
+  z-index: 99999999 !important;
+  width: 375px !important;
+  left: auto !important;
+  right: 0px;
+}
+
+.g-dialog-content:not(.g-dialog-content--fullscreen) {
+  margin: 16px !important;
+}
+
+#kps_find_all {
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #000000;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#kps_find_email {
+  cursor: pointer;
+  color: #000000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+  border-radius: 8px;
+  border: 1px solid #dad6d6;
+  display: flex;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#kps_find_phone {
+  cursor: pointer;
+  color: #000000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #dad6d6;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#kps_view_contact {
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  padding: 19px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 40px;
+  border: 1px solid #dad6d6;
+  color: #000000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#kompassBtnWrapper {
+  display: flex;
+  margin-top: 20px;
+  gap: 11px;
+}
+
+.show-btn-info p {
+  color: #7f8192;
+
+  font-family: 'Outfit';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  /* 19.6px */
+}
+
+#kps_sales_save,
+#kps_sales_find_email,
+#kps_sales_find_emailphone,
+#kps_sales_find_phone,
+#kps_sales_find_all,
+#kps_sales_add_to_list,
+#kps_sales_push_to_crm {
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #dad6d6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  gap: 8px;
+}

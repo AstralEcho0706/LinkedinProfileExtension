@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "KompassAI",
+  "description": "KompassAI",
+  "version": "2.0.3",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "src/sw.ts"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/*"
+      ],
+      "js": [
+        "src/content-scripts/content.ts"
+      ],
+      "css": [
+        "src/content-scripts/content.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://master.d2rtvkfs8dx2qd.amplifyapp.com/search"
+      ],
+      "js": [
+        "src/content-scripts/kompassContent.ts"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "unlimitedStorage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/content-scripts/content.css",
+        "fonts/Outfit-Regular.ttf",
+        "fonts/Outfit-Light.ttf",
+        "fonts/Outfit-Medium.ttf",
+        "fonts/Outfit-SemiBold.ttf",
+        "fonts/Outfit-Bold.ttf",
+        "*.png",
+        "*.svg",
+        "*.ttf"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "*://*/*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "*://*.linkedin.com/*",
+    "*://master.d2rtvkfs8dx2qd.amplifyapp.com/*",
+    "*://2mva3bjknd.execute-api.us-east-1.amazonaws.com/*"
+  ]
+}

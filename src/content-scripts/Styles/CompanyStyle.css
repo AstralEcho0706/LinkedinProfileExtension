@@ -1,0 +1,418 @@
+.info-details {
+  padding: 8px;
+  border-radius: 16px;
+  background: #f3f3f3;
+}
+
+.info-details .user-avatar {
+  position: relative;
+}
+
+.info-details .user-avatar .avatar {
+  margin-right: 16px;
+}
+
+.info-details .user-avatar .user-name-info h3 {
+  color: #090c05;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  /* 19.2px */
+}
+
+.info-details .user-avatar .user-name-info span {
+  color: #7f8192;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.info-details .user-avatar .bookmark-badge {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+
+.skill-tags {
+  padding-top: 8px;
+}
+
+.skill-tags ul {
+  padding-left: 0px;
+}
+
+.skill-tags ul li {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.skill-tags ul li span {
+  border-radius: 30px;
+  background: #dceafe;
+  color: #090c05;
+  padding: 0px 10px;
+  font-size: 12px;
+  font-style: normal;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 30px;
+  /* 16.8px */
+}
+
+.email-address-info {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.email-address-info .email-list .email-checkbox {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.email-address-info .email-list .email-checkbox .checkbox {
+  margin-right: 24px;
+}
+
+.email-address-info .email-list .email-checkbox label {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #090c05;
+  line-height: 24px;
+  margin-top: 0px;
+}
+
+.email-address-info .email-list .email-checkbox label span {
+  color: #7f8192;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.email-address-info .email-list .email-checkbox label:before {
+  content: '';
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #87a1a3 !important;
+  background: #ffffff;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 16px;
+  left: 0px;
+  top: 0px;
+}
+
+#moreBtn {
+  display: block;
+  cursor: pointer;
+  color: #4873fa;
+  margin-top: 3px;
+}
+
+.email-address-info .email-list .email-checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 9px !important;
+  top: 6px !important;
+  width: 6px !important;
+  height: 12px !important;
+  border: solid #090c05 !important;
+  border-width: 0 2px 2px 0 !important;
+  transform: rotate(45deg);
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+.email-address-info .email-list .email-checkbox-sales {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.email-address-info .email-list .email-checkbox-sales .checkbox {
+  margin-right: 24px;
+}
+
+.email-address-info .email-list .email-checkbox-sales label {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #090c05;
+  line-height: 18px;
+}
+
+.email-address-info .email-list .email-checkbox-sales label span {
+  color: #7f8192;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.email-address-info .email-list .email-checkbox-sales label:before {
+  content: '';
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #87a1a3 !important;
+  background: #ffffff;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 16px;
+  left: 0px;
+  top: 0px;
+}
+
+.email-address-info
+  .email-list
+  .email-checkbox-sales
+  input:checked
+  + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 6px !important;
+  top: 8px !important;
+  width: 6px !important;
+  height: 12px !important;
+  border: solid #090c05 !important;
+  border-width: 0 2px 2px 0 !important;
+  transform: rotate(45deg);
+}
+
+.email-address-info .email-credit {
+  position: relative;
+  border-radius: 30px;
+  background: #edecf8;
+  padding: 0px 10px;
+}
+
+.email-address-info .email-credit span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  padding-left: 22px;
+}
+
+.email-address-info .email-credit span::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #4873fa;
+  border-radius: 50px;
+  left: 18px;
+  top: 9px;
+}
+
+.reveal-btn-info p {
+  color: #7f8192;
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19.6px;
+}
+
+.theme-btn-primary {
+  background-color: #090c05;
+  border-radius: 40px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  height: 40px;
+  padding: 19px 24px;
+  line-height: 2px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+}
+
+.theme-btn-primary:hover {
+  background: #dceafe;
+  color: #000000;
+}
+
+#email-checkmark[type='checkbox']:checked + label:before {
+  border: 1px solid #87a1a3 !important;
+  background-color: transparent;
+}
+
+#email-checkmark[type='checkbox']:checked + label:after {
+  background: #0f0101;
+}
+
+#phone-checkmark[type='checkbox']:checked + label:before {
+  border: 1px solid #87a1a3 !important;
+  background-color: transparent;
+}
+
+#phone-checkmark[type='checkbox']:checked + label:after {
+  background: #0f0101;
+}
+
+.kompass-ai-info {
+  border-radius: 16px;
+  padding: 8px;
+  padding-right: 16px;
+  border: 1px solid #dad6d6;
+  margin-bottom: 32px;
+}
+
+.kompass-ai-info .kompass-company-info {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.kompass-ai-info .kompass-company-info .company-logo {
+  margin-right: 16px;
+  width: 40px;
+}
+
+.kompass-ai-info .kompass-company-info .kompass-name-info h3 {
+  color: #090c05;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  /* 19.2px */
+}
+
+.kompass-ai-info .kompass-company-info .kompass-name-info span {
+  color: #7f8192;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.kompass-ai-info .kompass-company-info .social-links {
+  position: absolute;
+  right: 0;
+}
+
+.kompass-ai-info .kompass-company-info .social-links span {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.kompass-ai-info .company-short-info {
+  margin-bottom: 16px;
+  color: #090c05;
+}
+
+.company-short-info {
+  margin-bottom: 16px;
+  color: #090c05;
+}
+
+.company-short-info .text-container {
+  margin: 0px !important;
+}
+
+.kompass-ai-info .company-short-info p {
+  overflow: hidden;
+  color: #090c05 !important;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22.4px;
+}
+
+.company-short-info p {
+  overflow: hidden;
+  color: #090c05 !important;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.kompass-ai-info .date-meta {
+  margin-bottom: 16px;
+}
+
+.kompass-ai-info .date-meta p {
+  color: #090c05;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.6px;
+}
+
+.kompass-ai-info .box-grid-layout .box {
+  border-radius: 8px;
+  padding: 8px 12px !important;
+  background: #f3f3f3;
+  margin-bottom: 8px;
+  width: 48%;
+}
+
+.kompass-ai-info .box-grid-layout .box .box-icon {
+  margin-bottom: 8px;
+}
+
+.kompass-ai-info .box-grid-layout .box .box-icon img {
+  margin-right: 8px;
+}
+
+.kompass-ai-info .box-grid-layout .box .box-icon span {
+  color: #090c05;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19.2px;
+}
+
+.kompass-ai-info .box-grid-layout .box .box-caption h4 {
+  color: #090c05;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.4px;
+}
+
+.kompass-ai-info .box-grid-layout .mr-8 {
+  margin-right: 8px;
+}
+
+.kompass-ai-info .experience-company {
+  margin-top: 18px;
+}
+
+.kompass-ai-info .experience-company .experience-title {
+  margin-bottom: 16px;
+}
+
+.kompass-ai-info .experience-company .experience-title h2 {
+  color: #090c05;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30.8px;
+}
